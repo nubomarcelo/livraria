@@ -10,6 +10,9 @@ ul li a{
     text-align: center;
     padding: 4em;
 }
+.container-livro{
+    margin-top: 3em;
+}
 .pd-livro{
     margin-right: 3em;
 }
@@ -19,4 +22,8 @@ ul li a{
 .img-max{
     max-width: 300px;
     width: auto;
+}
+.titulo-centro{
+    text-align: center;
+    margin: auto;
 }
