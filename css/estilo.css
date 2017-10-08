@@ -5,3 +5,18 @@
 ul li a{
     font-weight: 600;
 }
+
+.container-centro{
+    text-align: center;
+    padding: 4em;
+}
+.pd-livro{
+    margin-right: 3em;
+}
+.pd-label{
+    margin-top: 1em;
+}
+.img-max{
+    max-width: 100px;
+    width: auto;
+}
