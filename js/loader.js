@@ -4,6 +4,6 @@ $(function(){
 });
 
 
-//$( "#teste" ).click(function() {
-//  alert( "Handler for .click() called." );
-//});
+$( "#teste" ).click(function() {
+  alert( "Handler for .click() called." );
+});
