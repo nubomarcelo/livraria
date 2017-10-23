@@ -10,18 +10,35 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
         <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-        <!-- JavaScript Bootstrap e jQuery Loader Header/Footer-->
-        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">        
     </head>
     <body>
-        <header id="topo"></header>
+        <div class="container-fluid">
+        <a href="index.html"><img class="img-responsive img-logo-centro" src="img/livrariacultura.jpg" alt="Livraria Cultura"></a>
+        </div>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav" id="menu">
+                    <li><a href="corpo-home">Todos os Livros</a></li>
+                    <li><a href="suspense">Suspense</a></li>
+                    <li><a href="hq">HQs</a></li>
+                    <li><a href="direito">Direito</a></li>
+                    <li><a href="economia">Economia</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Carrinho</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Cadastre-se</a></li>
+                    <li><a href="conteudos/login.html"><span class="glyphicon glyphicon-log-in"></span> Entrar</a></li>
+                </ul>
+            </div>
+        </nav>
         <div id="content"></div>
-        <script src="js/loader.js"></script>        
-        <script src="js/loader-conteudo.js"></script>
         <footer id="rodape"></footer>
+        <!-- JavaScript Bootstrap e jQuery Loader Header/Footer-->
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  
+        <script src="js/loader.js"></script> 
+        <script src="js/loader-conteudo.js"></script>
+        <script src="js/auth.js"></script>
     </body>
 </html>
