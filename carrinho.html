@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <meta charset="utf-8">
-        <title>Livraria Cultura | Home</title>
+        <title>Livraria Cultura | Produtos</title>
         <link rel="stylesheet" href="css/estilo.css">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -26,7 +26,7 @@
                     <li><a href="economia">Economia</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="carrinho.html"><span class="glyphicon glyphicon-shopping-cart"></span>Carrinho</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Carrinho</a></li>
 <!--
                     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Cadastre-se</a></li>
                     <li><a href="conteudos/login.html"><span class="glyphicon glyphicon-log-in"></span> Entrar</a></li>
@@ -34,13 +34,27 @@
                 </ul>
             </div>
         </nav>
-        <div id="content"></div>
+        <div class="container">
+            <div class="container-fluid">
+<div>
+    <ul id="show-cart">
+        <li class="li-none">Seu carrinho está vazio</li>
+    </ul>
+    <header id="header">
+        <th><img src="img/total.png"></th><span> Balanço:</span>
+    </header>
+    <div>Você tem <span id="count-cart">X</span> produto(s) em seu carrinho</div>
+    <div>Total a Pagar R$: <span id="total"></span></div>
+</div>
+<br>
+<button class="btn" id="limparCarrinho">Limpar Carrinho</button>
+            </div>
+        </div>
         <footer id="rodape"></footer>
         <!-- JavaScript Bootstrap e jQuery Loader Header/Footer-->
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  
         <script src="js/loader.js"></script> 
         <script src="js/loader-conteudo.js"></script>
-        <script src="js/auth.js"></script>
     </body>
 </html>

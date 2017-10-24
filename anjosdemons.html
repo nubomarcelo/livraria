@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <meta charset="utf-8">
         <title>Livraria Cultura | Anjos e Demônios</title>
-        <link rel="stylesheet" href="/../css/estilo.css">
+        <link rel="stylesheet" href="css/estilo.css">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -27,25 +27,27 @@
                     <li><a href="economia">Economia</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Carrinho</a></li>
+                    <li><a href="carrinho.html"><span class="glyphicon glyphicon-shopping-cart"></span>Carrinho</a></li>
+<!--
                     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Cadastre-se</a></li>
                     <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Entrar</a></li>
+-->
                 </ul>
             </div>
         </nav>
         <div class="container container-livro">
             <div class="col-sm-4">
-                <img src="img/anjosdemons.jpg" alt="" class="img-responsive">
+                <img src="img/anjosdemons.jpg" data-img="img/anjosdemons.jpg" id="imagem" alt="" class="img-responsive imagem">
             </div>
             <div class="col-sm-4">
                 <div class="container-fluid">
-                    <p class="tituloLivro">Título: Anjos e Demônios</p>
+                    <p class="tituloLivro" data-name="Anjos e Demônios">Título: Anjos e Demônios</p>
                     <p class="descLivro">Autor: Dan Brown</p>
                     <p class="descLivro">Editora: Aqueiro</p>
                 </div>
                 <br><br><br><br><br>
                 <div class="container-fluid precoCentro">
-                    <p class="valorProduto">R$39,90</p>
+                    <p class="valorProduto" data-price="39.90">R$39,90</p>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -55,7 +57,7 @@
                 </div>
                 <br><br><br><br><br>
                 <div class="container-fluid">
-                    <input type="button" class="btn btn-carrinho" value="Adicionar ao Carrinho">
+                    <input type="button" class="btn btn-carrinho adicionar"  data-name="Anjos e Demônios" data-price="39.90" value="Adicionar ao Carrinho">
                 </div>
             </div>
         </div>
