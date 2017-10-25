@@ -5,7 +5,7 @@ $(document).ready(function(){
 });
 // loader content das páginas
 $(document).ready(function(){
-    $("#content").load("conteudos/corpo-home.html");
+    $("#content").load("conteudos/home.html");
     $("ul#menu li a").click(function(){
         var pagina = $(this).attr('href');
         $('#content').load('conteudos/'+pagina+'.html');
@@ -13,14 +13,14 @@ $(document).ready(function(){
     });
 });
 
-$(document).ready(function(){
-    $("#content").load("conteudos/anjosdemons.html");
-    $("ul#menu li a").click(function(){
-        var pagina = $(this).attr('href');
-        $('#content').load('conteudos/'+pagina+'.html');
-        return false;
-    });
-});
+//$(document).ready(function(){
+//    $("#content").load("conteudos/anjosdemons.html");
+//    $("ul#menu li a").click(function(){
+//        var pagina = $(this).attr('href');
+//        $('#content').load('../conteudos/'+pagina+'.html');
+//        return false;
+//    });
+//});
 
 //Carrinho de Compras
 
@@ -181,20 +181,20 @@ function exibirCarrinho() {
     var output = "";
 
     for (var i in carrrinhoArray) {
-        output += "<li>" +
+        output += "<li style='list-style-type: none'>" +
             carrrinhoArray[i].nome +
             " <input style='width:50px' class='item-cont' type='number' data-name='" +
             carrrinhoArray[i].nome +
             "' value='" + carrrinhoArray[i].cont + "' >" +
             " x " + carrrinhoArray[i].preco +
             " = " + carrrinhoArray[i].total +
-            " <button style='display:none' class='somar-item' data-name='" +
+            " <button style='display: none' class='somar-item' data-name='" +
             carrrinhoArray[i].nome + "'>Adicionar +1</button>" +
-            " <button style='display:none' class='subtrair-item' data-name='" +
+            " <button style='display: none' class='subtrair-item' data-name='" +
             carrrinhoArray[i].nome + "'>Tirar um produto</button>" +
             " <button class='delete-item btn' data-name='" +
-            carrrinhoArray[i].nome + "'>Deletar</button>" +
-            "</li>";
+            carrrinhoArray[i].nome + "'>Remover Item</button>" +
+            "</li><br>";
     }
 
     $("#show-cart").html(output);
