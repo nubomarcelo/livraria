@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta charset="utf-8">
+        <title>Livraria Cultura | A Tormenta de Espadas</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <a href="index.html"><img class="img-responsive img-logo-centro" src="img/livrariacultura.jpg" alt="Livraria Cultura"></a>
+        </div>
+        <nav class="navbar navbar-default">
+           <!--Inicio menu responsivo -->
+            <div class="container-fluid cor-menu">
+                <div class="navbar-header"  id="btAbrir">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                  </button>
+                </div>
+            </div>
+           <!--Fim menu responsivo -->
+            <div class="container-fluid collapse navbar-collapse cor-menu" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav" id="menu">
+                    <li><a href="home"><span  class="cor-fonte-menu" >Todos os Livros</span></a></li>
+                    <li><a href="suspense"><span  class="cor-fonte-menu" >Suspense</span></a></li>
+                    <li><a href="hq"><span  class="cor-fonte-menu" >HQs</span></a></li>
+                    <li><a href="direito"><span  class="cor-fonte-menu" >Direito</span></a></li>
+                    <li><a href="economia"><span  class="cor-fonte-menu" >Economia</span></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="carrinho.html"><span class="glyphicon glyphicon-shopping-cart cor-fonte-menu"></span><span  class="cor-fonte-menu" > Carrinho</span></a></li>
+<!--
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Cadastre-se</a></li>
+                    <li><a href="conteudos/login.html"><span class="glyphicon glyphicon-log-in"></span> Entrar</a></li>
+-->
+                </ul>
+            </div>
+        </nav>
+        <div class="container container-livro">
+            <div class="col-sm-4">
+                <img src="img/torrenegra1.jpg" alt="" class="img-responsive imagem">
+            </div>
+            <div class="col-sm-4">
+                <div class="container-fluid">
+                    <p class="tituloLivro">A Tormenta de Espadas</p>
+                    <p class="descLivro">Autor: George R.R. Martin</p>
+                    <p class="descLivro">Editora: Casa da Palavra</p>
+                </div>
+                <br><br><br><br><br>
+                <div class="container-fluid precoCentro">
+                    <p class="valorProduto">R$27,90</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <br><br><br><br>
+                <div class="container-fluid">
+                    <input type="button" class="btn btn-compra" value="Comprar">
+                </div>
+                <br><br><br><br><br>
+                <div class="container-fluid">
+                    <input type="button" class="btn btn-carrinho adicionar"  data-name="A Tormenta de Espadas" data-price="27.90" value="Adicionar ao Carrinho">
+                </div>
+            </div>
+        </div>
+        <div class="container textoSinopse">
+            <p class="tituloLivro">Sinopse</p>
+        </div>
+        <div class="container">
+            <p class="texto-jus">
+                'A tormenta de espadas', o terceiro livro da série de George R. R. Martin, onde os Sete Reinos já sentem o rigoroso inverno que chega, mas as batalhas parecem estar mais cruéis e impiedosas. Enquanto os Sete Reinos estremecem com a chegada dos temíveis selvagens pela Muralha, numa maré interminável de homens, gigantes e terríveis bestas, Jon Snow, o Bastardo de Winterfell, que se encontra entre eles, divide-se entre sua consciência e o papel que é forçado a desempenhar. 
+
+                Robb Stark, o Jovem Lobo, vence todas as suas batalhas, mas será que ele conseguirá vencer os desafios que não se resolvem apenas com a espada? Arya continua a caminho de Correrrio, mas mesmo alguém tão desembaraçado como ela terá grande dificuldade em ultrapassar os obstáculos que se aproximam. Na corte de Joffrey, em Porto Real, Tyrion luta pela vida, depois de ter sido gravemente ferido na Batalha da Água Negra; e Sansa, livre do compromisso com o homem que agora ocupa o Trono de Ferro, precisa lidar com as consequências de ser a segunda na linha de sucessão de Winterfell, uma vez que Bran e Rickon estariam mortos. 
+
+                No Leste, Daenerys Targaryen navega em direção às terras da sua infância, mas antes ela precisará aportar às desprezíveis cidades dos esclavagistas. Mas a menina indefesa agora é uma mulher poderosa. Quem sabe quanto tempo falta para se transformar em uma conquistadora impiedosa?
+            </p>
+        </div>
+        <footer id="rodape"></footer>
+        <!-- JavaScript Bootstrap e jQuery -->
+        <script type="text/javascript" src="/../js/jquery-3.2.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="/../js/loader.js"></script>
+        <script src="/../js/auth.js"></script>
+    </body>
+</html>
