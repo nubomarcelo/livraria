@@ -1,20 +1,33 @@
 <div class="container-fluid">
-    <a href="index.html"><img class="img-responsive img-logo-centro" src="img/livrariacultura.jpg" alt="Livraria Cultura"></a>
-</div>
-<nav class="navbar">
-    <div class="container-fluid">
-        <ul class="nav navbar-nav" id="menu">
-            <li><a href="suspense">Suspense</a></li>
-            <li><a href="#">HQs</a></li>
-            <li><a href="#">Direito</a></li>
-            <li><a href="#">Economia</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Carrinho</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Cadastre-se</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Entrar</a></li>
-        </ul>
-    </div>
-</nav>
+        <a href="index.html"><img class="img-responsive img-logo-centro" src="img/livrariacultura.jpg" alt="Livraria Cultura"></a>
+        </div>
+        <nav class="navbar navbar-default">
+           <!--Inicio menu responsivo -->
+            <div class="container-fluid cor-menu">
+                <div class="navbar-header"  id="btAbrir">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                  </button>
+                </div>
+            </div>
+           <!--Fim menu responsivo -->
+            <div class="container-fluid collapse navbar-collapse cor-menu" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav" id="menu">
+                    <li><a href="home"><span  class="cor-fonte-menu" >Todos os Livros</span></a></li>
+                    <li><a href="suspense"><span  class="cor-fonte-menu" >Suspense</span></a></li>
+                    <li><a href="hq"><span  class="cor-fonte-menu" >HQs</span></a></li>
+                    <li><a href="direito"><span  class="cor-fonte-menu" >Direito</span></a></li>
+                    <li><a href="economia"><span  class="cor-fonte-menu" >Economia</span></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="carrinho.html"><span class="glyphicon glyphicon-shopping-cart cor-fonte-menu"></span><span  class="cor-fonte-menu" > Carrinho</span></a></li>
+<!--
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Cadastre-se</a></li>
+                    <li><a href="conteudos/login.html"><span class="glyphicon glyphicon-log-in"></span> Entrar</a></li>
+-->
+                </ul>
+            </div>
+        </nav>
 
 

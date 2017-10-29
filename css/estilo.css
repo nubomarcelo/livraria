@@ -87,29 +87,26 @@ ul li a{
 .cor-fonte-menu{
     color:  #fff;
 }
-/*
 footer{
+    clear: both;
+    bottom: 50%;
+    position: relative;
     width: 100%;
-height: auto !important;
-position: absolute;
-clear: both;
-bottom: 0 !important;
-padding-bottom: 5px;
 }
-*/
+.carrinho{    
+    bottom: 0%;
+    position: absolute;
+    width: 100%;
+}
 html{
     height: 100%;
 }
 
-body {
+body #categoria{
     min-height: 100%;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
 }
 
-.content {
-      flex: 1;
-}
 
 .btn-esvaziar{
     width: 150px;
