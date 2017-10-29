@@ -13,14 +13,13 @@ $(document).ready(function(){
     });
 });
 
-//$(document).ready(function(){
-//    $("#content").load("conteudos/anjosdemons.html");
-//    $("ul#menu li a").click(function(){
-//        var pagina = $(this).attr('href');
-//        $('#content').load('../conteudos/'+pagina+'.html');
-//        return false;
-//    });
-//});
+$(document).ready(function(){
+    $("ul#menu li a").click(function(){
+        var pagina = $(this).attr('href');
+        $('#categoria').load('../conteudos/'+pagina+'.html');
+        return false;
+    });
+});
 
 //Carrinho de Compras
 
