@@ -12,7 +12,8 @@ $(document).ready(function(){
         return false;
     });
 });
-
+//loader para carregar os conteudos das páginas por uma página que não seja a index.html
+//Foi criada uma <div id="categoria" para carregar as páginas dentro de conteúdo, a div está logo abaixo do fim da nav
 $(document).ready(function(){
     $("ul#menu li a").click(function(){
         var pagina = $(this).attr('href');
