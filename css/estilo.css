@@ -95,7 +95,6 @@ footer{
 }
 .carrinho{    
     bottom: 0%;
-    position: absolute;
     width: 100%;
 }
 html{
@@ -119,5 +118,23 @@ body #categoria{
     margin-left: 20%;
 }
 .btn-finalizar-compra{
-    margin-top: 15%;
+    margin-top: 5%;
+}
+.btn-continuar{
+    background-color: darkorange;
+    margin-top: 20%;
+}
+
+.p-carrinho {
+    margin-bottom: 14%;
+}
+
+.content {
+    text-align: left;
+    padding-bottom: 25%;
+}
+
+/*Retirar a margem da classe nos dispositivos móveis*/
+@media screen and (max-width: 768px){
+    .pd-livro{ margin-right: 0;}
 }

@@ -22,6 +22,23 @@ $(document).ready(function(){
     });
 });
 
+//remover classe pd-livro na versão mobile
+//$(document).ready(function(){
+//    windowWidth = window.innerWidth;
+//    
+//    if(windowWidth <= 769){
+//    $('.col-xs-6').removeClass('pd-livro');
+//    }
+//});
+$(document).resize(function () {
+     var screen = $(window);  
+
+     if (screen.width < 768) {
+         $('.pd-livro').removeClass('pd-livro');
+     } else {
+         $('.pd-livro').addClass('pd-livro');
+     }
+});
 //Carrinho de Compras
 
 var carrinhoDeCompra = (function ()
