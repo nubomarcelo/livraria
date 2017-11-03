@@ -47,6 +47,7 @@ ul li a{
 }
 .precoCentro{
     text-align: center;
+    margin-top: 4em;
 }
 .valorProduto{
     font-size: 2.5em
@@ -137,4 +138,48 @@ body #categoria{
 /*Retirar a margem da classe nos dispositivos móveis*/
 @media screen and (max-width: 768px){
     .pd-livro{ margin-right: 0;}
+}
+
+@media screen and (max-width: 768px){
+    .b-centro{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .btn-compra{
+        width: 200px;
+        height: 50px;
+        font-size: 30px;
+        background-color: #008000;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .btn-carrinho{
+        width: 200px;
+        height: 50px;
+        font-size: 30px;
+        background-color: deepskyblue;
+        color: #fff;
+    }
+}
+
+/*Alinhando o título e descrição do livro*/
+@media screen and (max-width: 768px){
+    .tituloLivro{
+        font-size: 1.3em;
+    }
+    .descLivro{
+        font-size: 1em;
+    }
+    .valorProduto{
+        margin-top: 3px;
+        font-size: 1.5em
+    }
+    .precoCentro{
+    text-align: center;
+    margin-top: 0;
+}
 }
